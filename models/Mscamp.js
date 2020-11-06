@@ -11,7 +11,8 @@ const MscampSchema = new mongoose.Schema({
    address:{type:String},
    careers:{type:[String]},
    online:{type:Boolean},
-   averageCost:{type:Number}
+   averageCost:{type:Number},
+  
 })
 
     module.exports = mongoose.model('Mscamp',MscampSchema)
