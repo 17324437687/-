@@ -1,7 +1,6 @@
 // 引入模型
 const Mscamp = require('../models/Mscamp')
-
-exports.getMscamps =async (req,res,next)=>{
+exports.getMscamps = async (req,res,next)=>{
     try{ //find 获取全部数据
        const mscamp = await Mscamp.find()
         res.status(200).json({sucess:true,count:mscamp.length,data:mscamp})
